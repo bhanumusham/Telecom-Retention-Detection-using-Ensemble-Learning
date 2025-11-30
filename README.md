@@ -63,6 +63,7 @@ This system can reduce revenue loss by helping telecom CRM teams identify churn-
 
 ## 🖥️ System Architecture
 
+
 ---
 
 ## 🖥️ Tech Stack
@@ -79,31 +80,79 @@ This system can reduce revenue loss by helping telecom CRM teams identify churn-
 
 ## 📂 Project Structure
 
+Telecom-Retention-Detection-using-Ensemble-Learning/
+│  
+├── data/                       # Dataset files (CSV)  
+├── models/                     # Serialized trained model (.pkl)  
+├── static/                     # CSS, JS, images for Flask UI  
+├── templates/                  # HTML templates for Flask frontend  
+│  
+├── app.py                      # Flask backend / prediction API  
+├── churn_predictor.ipynb       # ML pipeline (EDA → Training → Evaluation)  
+├── requirements.txt            # Dependencies for environment setup  
+└── README.md                   # Project documentation  
+
 ---
 
 ## 🛠️ Installation & Usage
-```sh
-# Clone repository
-git clone https://github.com/<your-username>/telecom-churn-detection.git
-cd telecom-churn-detection
 
-# Create virtual environment
+# Clone the repository
+git clone https://github.com/bhanumusham/Telecom-Retention-Detection-using-Ensemble-Learning.git
+
+cd Telecom-Retention-Detection-using-Ensemble-Learning
+
+# Create a virtual environment
 python -m venv venv
-source venv/bin/activate       # Linux / Mac
-venv\Scripts\activate          # Windows
+source venv/bin/activate          # Linux / Mac
+venv\Scripts\activate             # Windows
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run app
+# Run the application
 python app.py
 
 ---
 
-### 🔥 Want a README banner + live badges + preview GIF?
-If yes, I can:
-✔ generate a banner image for the top of README  
-✔ add social badges (portfolio / LinkedIn / YouTube demo / Kaggle dataset)  
-✔ give upload-ready screenshots (confusion matrix, UI, feature importance)
+## 📈 Results Summary
 
-Just reply **"yes - upgrade with visuals"** 🚀
+| Metric               | Value                                                    |
+| -------------------- | -------------------------------------------------------- |
+| Accuracy             | **93.19%**                                               |
+| Precision            | High                                                     |
+| Recall (Churn Class) | Improved significantly using ensemble                    |
+| Visualizations       | Feature importance, churn distribution, billing patterns |
+---
+
+## 🎯 Future Enhancements
+
+Explainable AI (SHAP + LIME)
+
+Real-time streaming data (Kafka integration)
+
+Deploy with Docker / AWS / Render
+
+Multi-language dashboard
+
+SMS/email-based retention recommendation module
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome.
+If you'd like major changes, please open an issue first to discuss.
+
+---
+
+## ⭐ Support
+
+If you like this repository, please star ⭐ it on GitHub — it helps a lot!
+
+---
+
+## 🧾 License
+
+This project is intended for academic and learning purposes only.
+
+---
