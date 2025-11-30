@@ -63,6 +63,7 @@ This system can reduce revenue loss by helping telecom CRM teams identify churn-
 
 ## 🖥️ System Architecture
 
+<img src="https://github.com/bhanumusham/Telecom-Retention-Detection-using-Ensemble-Learning/blob/main/architecture%20diagram.png" alt="Architecture Diagram" width="500" height="500">
 
 ---
 
